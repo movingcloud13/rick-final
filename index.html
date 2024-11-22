@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick's Website</title>
     <style>
+        @font-face {
+            font-family: 'Amsterdam';
+            src: url('https://your-font-hosting.com/amsterdam.ttf') format('truetype');
+        }
+
         body {
-            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-family: 'Amsterdam', sans-serif;
             background-color: #f9f9f9;
             color: #333;
             margin: 0;
@@ -14,34 +19,48 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 700px;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.8rem; /* Smaller font for header */
             color: #222;
             margin-bottom: 1rem;
         }
+
         p {
-            font-size: 1.2rem;
+            font-size: 0.9rem; /* Smaller font for paragraphs */
             line-height: 1.6;
             margin: 0.5rem 0;
+        }
+
+        a {
+            font-size: 0.9rem;
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hey! I'm Rick</h1>
-        <p>I’m building Verihubs, an enterprise deepfake and fraud detection platform based in Indonesia. In a world of advanced AI, I believe this work is critical.</p>
-        <p>Verihubs is part of Y Combinator (S21) and has raised $4.8M from Southeast Asia's top investors. We've served over 300 clients in the past five years, and we’re committed to innovating every day to meet their needs.</p>
-        <p>I love creating products for everyday life. Lately, I’m especially curious about AI for personal health, domestic robots, and operating systems. Outside of work, I enjoy skiing, films, live music, and old-school diners.</p>
+        <h1>Hey, I’m Rick!</h1>
+        <p>I’m working on Verihubs, a platform tackling deepfake and fraud detection in Indonesia. With advanced AI shaping the world, I think this is pretty crucial stuff.</p>
+        <p>Verihubs is part of Y Combinator (S21) and has raised $4.8M from some of Southeast Asia’s top investors. Over the past five years, we’ve helped 300+ clients and keep pushing ourselves to stay innovative.</p>
+        <p>When I’m not working, I dive into design—it’s my go-to for unwinding and finding calm. Lately, I’ve been exploring crypto and would love to learn more about it.</p>
+        <p>Feel free to <a href="https://linkedin.com/in/yourprofile" target="_blank">connect with me on LinkedIn!</a></p>
     </div>
 </body>
 </html>

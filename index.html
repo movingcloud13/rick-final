@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick's Website</title>
     <style>
-        /* Import Amsterdam font using Cloudinary (replace the URL below) */
+        /* Import Amsterdam font */
         @font-face {
             font-family: 'Amsterdam';
             src: url('https://res.cloudinary.com/doitetv8g/raw/upload/v1732241206/AMSTERDAM_SERIF_REGULER_m2subk.ttf') format('truetype');
         }
 
+        /* Import Just Sans Light font */
+        @font-face {
+            font-family: 'JustSansLight';
+            src: url('https://res.cloudinary.com/doitetv8g/raw/upload/v1732241182/JUST_Sans_Light_x9g8ez.otf') format('truetype');
+        }
+
         body {
-            font-family: 'Amsterdam', sans-serif;
-            background-color: #f9f9f9; /* Light gray background */
+            font-family: 'JustSansLight', sans-serif; /* Default font for the body */
+            background-color: #ffffff; /* Full white background */
             color: #333; /* Dark gray text */
             margin: 0;
             padding: 20px;
-            text-align: left; /* Left-aligned text */
+            text-align: left; /* Fully left-aligned text */
         }
 
         h1 {
-            font-size: 1.8rem; /* Smaller header font size */
+            font-family: 'Amsterdam', sans-serif; /* Use Amsterdam for the heading */
+            font-weight: bold;
+            font-size: 0.9rem; /* Match font size with the rest of the text */
             margin-bottom: 1rem;
         }
 
         p {
-            font-size: 0.9rem; /* Smaller paragraph font size */
+            font-size: 0.9rem; /* Use same font size as the heading */
             line-height: 1.6;
             margin: 0.5rem 0;
         }
